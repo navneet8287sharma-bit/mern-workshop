@@ -1,67 +1,107 @@
 <!DOCTYPE html>
-<html>
- 
- <head>
-  <title>College Fest Registration</title>
- </head>
+<html lang="en">
 
- <body>
-  <header>
-   <h1> Techfest 2026</h1>
-  </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Care Hospital Registration</title>
+</head>
 
-  <main>
-   
-   <section>
-    <h2>About Event</h2>
-    <p id="paragraph"> Techfest 2026 is a college events where students can participate</p>
-   </section>
+<body>
 
-   <section>
-    <h2>Event Schedule</h2>
-    <ol>
-     <li>Coding Hackathon - 9:30AM</li>
-     <li>DSA Challenge - 11:30AM</li>
-     <li> Web Development Challenge - 4:30PM</li>
-    </ol>
-   </section>
+    <header>
+        <h1>City Care Hospital</h1>
+        <p>Your Health, Our Priority</p>
+    </header>
 
-   <section>
-    <h2>Rules</h2>
-    <ul>
-     <li> Participant must be of lega age</li>
-     <li> Should not indulge in unethical practices</li>
-    </ul>
-   </section>
+    <hr>
 
-   <section>
-    <h2>Registration Form</h2>
-    <form>
+    <section>
+        <h2>About Hospital</h2>
+        <p>
+            City Care Hospital is a modern healthcare center providing
+            quality medical services, experienced doctors, and 24-hour
+            emergency care for patients.
+        </p>
+    </section>
 
-     <label>Name:</label>
-     <input type="text" id="name">
-     <br><br>
+    <section>
+        <h2>Departments</h2>
+        <ul>
+            <li>General Medicine</li>
+            <li>Cardiology</li>
+            <li>Neurology</li>
+            <li>Orthopedics</li>
+            <li>Pediatrics</li>
+        </ul>
+    </section>
 
-     <label>Email:</label>
-     <input type="email" id="email">
-     <br><br>
+    <section>
+        <h2>Patient Registration Form</h2>
 
-     <label>Phone Number:</label>
-     <input type="tel" id="phone_number">
-     <br><br>
-      
-     <button type="button" onclick="hideemail()">Hide Email</button>
+        <form>
 
-     <button type="button" onclick="processform()">Register</button>
-    </form>
-    <h1 id="count">0 participants have registered till now.</h1>
-   </section>
-  </main>
-  <footer>
-   <p>
-    Contact: techfestofficial@gmail.com
-   </p>
-  </footer>
-  <script src="domscript.js"></script>
- </body>
+            <label>Patient Name:</label><br>
+            <input type="text" required><br><br>
+
+            <label>Age:</label><br>
+            <input type="number" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" required> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+            <br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" required><br><br>
+
+            <label>Email Address:</label><br>
+            <input type="email"><br><br>
+
+            <label>Address:</label><br>
+            <textarea rows="4" cols="40"></textarea><br><br>
+
+            <label>Select Department:</label><br>
+            <select required>
+                <option value="">Choose Department</option>
+                <option>General Medicine</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+            </select>
+            <br><br>
+
+            <label>Appointment Date:</label><br>
+            <input type="date" required><br><br>
+
+            <button type="submit">Register Patient</button>
+
+        </form>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Hospital Facilities</h2>
+        <ul>
+            <li>24×7 Emergency Services</li>
+            <li>ICU & Critical Care</li>
+            <li>Pharmacy</li>
+            <li>Laboratory Testing</li>
+            <li>Ambulance Services</li>
+        </ul>
+    </section>
+
+    <footer>
+        <h3>Contact Information</h3>
+        <p>Email: info@citycarehospital.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Open 24 Hours</p>
+    </footer>
+
+</body>
+
 </html>
+ 
