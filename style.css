@@ -1,0 +1,55 @@
+h1{
+ color:grey;
+}
+
+h2{
+ color:blue;
+}
+
+#skill{
+ text-decoration: underline;
+}
+
+.project-titles{
+ text-decoration: underline;
+}
+
+
+body{
+ padding:20px;
+}
+
+section ul li{
+ border: 2px solid black;
+ padding: 20px;
+ margin-bottom: 20px;
+}
+
+section ol{
+ border: 2px solid black;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+.container{
+ display:flex;
+ padding-left: 20px;
+ justify-content: space-around;
+ flex-direction: column;
+}
+
+#navbar{
+ display:flex;
+ padding-left: 20px;
+ justify-content: space-around;
+ flex-direction: row;
+}
+
+@media(max-width:768px)
+{
+ #navbar{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:10px;
+ }
+}
